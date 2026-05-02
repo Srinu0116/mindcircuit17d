@@ -2,78 +2,97 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Deployment Success</title>
+    <title>CI/CD Deployment Success</title>
     <style>
         body {
             margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #4facfe, #00f2fe);
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(270deg, #ff6a00, #ee0979, #00c9ff);
+            background-size: 600% 600%;
+            animation: gradientMove 10s ease infinite;
             color: white;
+            text-align: center;
         }
 
-        .container {
-            text-align: center;
-            background: rgba(0, 0, 0, 0.3);
+        @keyframes gradientMove {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        .card {
+            margin-top: 10%;
+            display: inline-block;
             padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 25px rgba(0,0,0,0.5);
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 2.8em;
             margin-bottom: 10px;
         }
 
-        p {
-            font-size: 1.2em;
-        }
-
-        .success {
+        .status {
+            font-size: 1.3em;
             color: #00ffcc;
             font-weight: bold;
         }
 
-        .footer {
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #ddd;
+        .info {
+            margin-top: 15px;
+            font-size: 1em;
         }
 
-        .emoji {
-            font-size: 50px;
+        .badge {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 8px 15px;
+            border-radius: 25px;
+            background: #28a745;
+            font-size: 0.9em;
         }
 
         button {
-            margin-top: 20px;
-            padding: 10px 20px;
+            margin-top: 25px;
+            padding: 10px 25px;
+            border-radius: 30px;
             border: none;
-            border-radius: 25px;
-            background: #ff7eb3;
-            color: white;
+            background: #ffd700;
             font-size: 1em;
             cursor: pointer;
-            transition: 0.3s;
+            font-weight: bold;
         }
 
         button:hover {
-            background: #ff4f81;
+            background: #ffcc00;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #ddd;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="emoji">🎉🚀</div>
-    <h1>Deployment Successful!</h1>
-    <p class="success">Your application is up and running on Tomcat 🎯</p>
-    <p>Congratulations! Your WAR file has been deployed successfully.</p>
+<div class="card">
+    <h1>🚀 CI/CD Pipeline Success</h1>
+    <div class="status">Application Deployed Successfully!</div>
 
-    <button onclick="showMessage()">Click Me</button>
+    <div class="info">
+        ✔ Build Completed <br>
+        ✔ WAR Packaged <br>
+        ✔ Deployed via Jenkins Pipeline <br>
+        ✔ Running on Apache Tomcat
+    </div>
+
+    <div class="badge">STATUS: LIVE ✅</div>
+
+    <br>
+    <button onclick="showDetails()">View Details</button>
 
     <div class="footer">
         Powered by Jenkins CI/CD ⚙️
@@ -81,8 +100,8 @@
 </div>
 
 <script>
-    function showMessage() {
-        alert("Awesome! Your deployment is working perfectly 🚀");
+    function showDetails() {
+        alert("Your CI/CD pipeline executed successfully!\nBuild → Test → Deploy completed 🚀");
     }
 </script>
 
