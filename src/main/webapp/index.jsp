@@ -1,65 +1,52 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Choose Option</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dockerized Tomcat Achievement</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
             text-align: center;
-            margin-top: 100px;
-            background-color: #f0f8ff;
+            padding: 50px;
         }
-
+        .container {
+            background: rgba(0,0,0,0.5);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
         h1 {
-            color: #333;
+            font-size: 40px;
         }
-
-        button {
-            padding: 10px 20px;
-            margin: 10px;
-            font-size: 16px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
+        p {
+            font-size: 20px;
         }
-
-        .btn1 {
-            background-color: #ff4d6d;
-            color: white;
-        }
-
-        .btn2 {
-            background-color: #4da6ff;
-            color: white;
-        }
-
-        #result {
-            margin-top: 30px;
-            font-size: 24px;
-            font-weight: bold;
-            color: #222;
+        .emoji {
+            font-size: 30px;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>🚀 Dockerized Tomcat Success 🚀</h1>
+        <p>I have successfully practiced <strong>Dockerizing the Tomcat container</strong>!</p>
 
-    <h1>Select an Option</h1>
+```
+    <p class="emoji">🎯 Achievement Unlocked 🎯</p>
+    
+    <p>✅ Built custom Docker image</p>
+    <p>✅ Configured Tomcat server</p>
+    <p>✅ Exposed custom port (8081)</p>
+    <p>✅ Successfully deployed and ran container</p>
 
-    <button class="btn1" onclick="showOption(1)">Option 1</button>
-    <button class="btn2" onclick="showOption(2)">Option 2</button>
-
-    <div id="result"></div>
-
-    <script>
-        function showOption(option) {
-            if (option === 1) {
-                document.getElementById("result").innerText = "I Love You ❤️";
-            } else if (option === 2) {
-                document.getElementById("result").innerText = "IFU 😄";
-            }
-        }
-    </script>
+    <br>
+    <p class="emoji">🔥 Keep Learning | Keep Building 🔥</p>
+</div>
+```
 
 </body>
 </html>
