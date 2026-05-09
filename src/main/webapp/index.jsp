@@ -32,7 +32,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Dockerized Tomcat S</h1>
+        <h1>Dockerized Tomcat </h1>
         <p>I have successfully practiced <strong>Dockerizing the Tomcat container concept</strong>!</p>
 
 
