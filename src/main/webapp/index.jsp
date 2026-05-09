@@ -33,19 +33,10 @@
 <body>
     <div class="container">
         <h1>🚀 Dockerized Tomcat Success 🚀</h1>
-        <p>I have successfully practiced <strong>Dockerizing the Tomcat container</strong>!</p>
+        <p>I have successfully practiced <strong>Dockerizing the Tomcat container concept</strong>!</p>
 
 ```
-    <p class="emoji">🎯 Achievement Unlocked 🎯</p>
-    
-    <p>✅ Built custom Docker image</p>
-    <p>✅ Configured Tomcat server</p>
-    <p>✅ Exposed custom port (8081)</p>
-    <p>✅ Successfully deployed and ran container</p>
-
-    <br>
-    <p class="emoji">🔥 Keep Learning | Keep Building 🔥</p>
-</div>
+  </div>
 ```
 
 </body>
