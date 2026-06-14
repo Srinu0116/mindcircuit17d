@@ -5,7 +5,7 @@
 
     <groupId>com.example</groupId>
     <artifactId>facebookapp</artifactId>
-    <version>1.0.0</version>
+    <version>4.0.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
 	<properties>
@@ -17,12 +17,12 @@
 	<distributionManagement>
 		 <snapshotRepository>
 		    <id>NexusRepo</id>
-		    <url>http://34.201.119.102:8081/repository/batch16d-repo-snapshot/</url>
+		    <url>http://54.82.92.150:8081/repository/batch17d-repo-snapshot/</url>
 		 </snapshotRepository>
 		
 		<repository>
 		    <id>NexusRepo</id>
-		    <url>http://34.201.119.102:8081/repository/batch16d-repo-release/</url>
+		    <url>http://54.82.92.150:8081/repository/batch17d-repo-release/</url>
 		</repository>
   	</distributionManagement>
     
