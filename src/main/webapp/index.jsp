@@ -55,7 +55,7 @@
 <body>
 
     <div class="header">
-        <h1>Jenkins CI/CD Demo</h1>
+        <h1>OMG</h1>
     </div>
 
     <div class="container">
