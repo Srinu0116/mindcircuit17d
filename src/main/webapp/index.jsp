@@ -1,116 +1,87 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib prefix="c" uri="jakarta.tags.core" %>
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MindCircuit</title>
+    <title>Jenkins CI/CD Demo</title>
 
     <style>
-        :root {
-            --primary-orange: #f97316;
-            --primary-orange-dark: #ea580c;
-            --background: #fffaf5;
-            --text-color: #333333;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: var(--background);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: var(--primary-orange);
-            color: #ffffff;
-            padding: 2rem;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
             text-align: center;
         }
 
-        main {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 1rem;
+        .header {
+            background: #222;
+            color: white;
+            padding: 25px;
         }
 
-        section {
-            background-color: #ffffff;
+        .container {
+            margin: 80px auto;
+            max-width: 700px;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .success {
+            font-size: 20px;
+            margin: 25px 0;
+        }
+
+        .info {
+            background: #f0f0f0;
+            padding: 20px;
             border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-        }
-
-        h1, h2 {
-            margin-bottom: 1rem;
-        }
-
-        .highlight {
-            color: var(--primary-orange-dark);
-            font-weight: bold;
+            text-align: left;
         }
 
         footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: var(--primary-orange);
-            color: #ffffff;
-            margin-top: 2rem;
+            margin-top: 50px;
+            color: #666;
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1>MindCircuit</h1>
-    <p>Innovate. Connect. Transform.</p>
-</header>
+    <div class="header">
+        <h1>Jenkins CI/CD Demo</h1>
+    </div>
 
-<main>
-    <section>
-        <h2>Welcome</h2>
-        <p>
-            Welcome to <span class="highlight">MindCircuit</span>,
-            a platform designed to inspire innovation and streamline digital solutions.
+    <div class="container">
+
+        <h1>🚀 Deployment Successful!</h1>
+
+        <p class="success">
+            Your application has been deployed successfully to Tomcat.
         </p>
-    </section>
 
-    <section>
-        <h2>User Portal</h2>
+        <div class="info">
+            <p><strong>Build Tool:</strong> Maven</p>
+            <p><strong>CI Tool:</strong> Jenkins</p>
+            <p><strong>Application Server:</strong> Apache Tomcat 9</p>
+            <p><strong>Deployment:</strong> WAR</p>
+            <p><strong>Status:</strong> SUCCESS</p>
+        </div>
 
-        <c:choose>
-            <c:when test="${not empty username}">
-                <p>
-                    Hello,
-                    <span class="highlight">
-                        <c:out value="${username}" />
-                    </span>!
-                </p>
-            </c:when>
-            <c:otherwise>
-                <p>Hello, Guest! Please sign in to access your dashboard.</p>
-            </c:otherwise>
-        </c:choose>
-    </section>
+        <p>Jenkins → GitHub → Maven → WAR → Tomcat</p>
 
-    <section>
-        <h2>System Status</h2>
-        <p>Application is running successfully.</p>
-    </section>
-</main>
+    </div>
 
-<footer>
-    <p>&copy; 2026 MindCircuit. All rights reserved.</p>
-</footer>
+    <footer>
+        Jenkins CI/CD Practice Project
+    </footer>
 
 </body>
 </html>
+```
